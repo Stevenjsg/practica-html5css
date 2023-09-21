@@ -4,7 +4,7 @@
 
 - Tener instalado **_Node.js_**
 - Tener activado **_pnpm_**.
-  ==Si no tienes activado pnpm con la siguiente linea se activa.==
+  Si no tienes activado pnpm con la siguiente linea se activa.
   `corepack prepare pnpm@8.7.6 --activate`
 
 ## Instalacion de paquetes

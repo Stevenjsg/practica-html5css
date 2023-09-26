@@ -4,109 +4,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/root.css" />
+  <link rel="stylesheet" href="../dist/build.css" />
   <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-32x32.png" />
   <title>Contacto</title>
 </head>
 
 <body>
-  <header class="nav-bar">
-    <nav class="navigator">
-      <a class="link" href="../index.html">
-        <h1 class="logo">LOGO</h1>
-      </a>
-      <ul class="nav-list">
-        <li><a class="link" href="./producto.html">Galeria</a></li>
-        <li><a class="link" href="./presupuesto.html">Presupuestos</a></li>
-        <li><a class="visited link" href="./contacto.html">Contacto</a></li>
+  <!-- Cabezera -->
+  <header
+    class='flex flex-col md:flex-row items-center transition-all gap-4 justify-center md:justify-between w-full bg-cyan-950 p-2 md:px-4 md:min-h-[5rem]'
+    id="arriba">
+    <a href="../index.html">
+      <h1 class="text-white font-extrabold text-6xl hover:scale-125">LOGO</h1>
+    </a>
+    <nav class="flex flex-wrap flex-col justify-evenly md:flex-row items-center">
+
+      <ul class="flex gap-4 ">
+        <li class="hover:bg-slate-600/25 rounded p-2 font-semibold text-white ">
+          <a href="./producto.html">Galeria</a>
+        </li>
+        <li class="hover:bg-slate-600/25 rounded p-2 font-semibold text-white">
+          <a href="./presupuesto.html">Presupuestos</a>
+        </li>
+        <li class="hover:bg-slate-600/25 rounded p-2 font-semibold  text-violet-500">
+          <a href="./contacto.html">Contacto</a>
+        </li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <section class="flex-center">
-      <article class="card">
-        <section class="card-header">
-          <h2>Contactanos</h2>
+  <!-- contenido principal -->
+  <main class="mx-auto  md:min-h-[80vh] w-full flex flex-wrap justify-center items-center p-8 md:p-2">
+    <!-- crear container para centrar -->
+    <section class="flex justify-center items-center">
+      <!-- Creacion de tarjeta formulario -->
+      <article class=" md:min-h-fit min-w-[50%] rounded-2xl border border-slate-300/25 shadow-lg">
+        <!-- Cabecera -->
+        <header class="rounded-t-2xl p-2 bg-gray-300">
+          <h2 class="font-semibold text-xl text-black">Contactanos</h2>
+        </header>
+        <!-- Body card -->
+        <section class="p-2 grid md:grid-cols-2 gap-2">
+          <article class="flex flex-wrap flex-col gap-2 justify-center items-center">
+            <h3 class="font-semibold text-xl text-black">Nuestra ubicacion</h3>
+            <figure>
+              <figcaption class="italic font-semibold text-xs rounded-t-md w-full px-2 bg-slate-300">Estamos aqui
+              </figcaption>
+              <iframe class="max-w-[18.75rem] max-h-[12.5rem] md:max-h-[18.75rem] md:max-w-[25rem]"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3104.6284971089863!2d1.4340620000000002!3d38.90961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDU0JzM0LjYiTiAxwrAyNicwMi42IkU!5e0!3m2!1ses!2ses!4v1694702180259!5m2!1ses!2ses"
+                width="400" height="300" style="border: 0" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </article>
+          <article class="flex flex-wrap flex-col gap-4 justify-center items-center md:justify-start">
+            <h3 class="font-semibold text-xl text-black">Nuestros canales de informacion</h3>
+            <ul class="flex flex-col gap-2 md:gap-4">
+              <li class="flex items-center gap-2 fill-none stroke-cyan-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                555-555-555
+              </li>
+              <li class="flex items-center gap-2 fill-none stroke-cyan-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                </svg>
+                Logo@business.com
+              </li>
+              <li class="flex items-center gap-2 fill-none stroke-cyan-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="10" r="3" />
+                  <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
+                </svg>
+                Calle Avicenna, Eivissa
+              </li>
+            </ul>
+          </article>
         </section>
-        <section class="card-body p0">
-          <div class="column-2">
-            <div class="column-1">
-              <figure>
-                <figcaption>Estamos aqui</figcaption>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3104.6284971089863!2d1.4340620000000002!3d38.90961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDU0JzM0LjYiTiAxwrAyNicwMi42IkU!5e0!3m2!1ses!2ses!4v1694702180259!5m2!1ses!2ses"
-                  width="400" height="300" style="border: 0" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </figure>
-            </div>
-            <div class="column-1 p0">
-              <ul class="contact-list">
-                <li class="row-center icon-svg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                    </path>
-                  </svg>
-                  555-555-555
-                </li>
-                <li class="row-center icon-svg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
-                  </svg>
-                  Logo@business.com
-                </li>
-                <li class="row-center icon-svg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2.5"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="10" r="3" />
-                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z" />
-                  </svg>
-                  Calle Avicenna, Eivissa
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="card-footer">
-          <button type="button" class="btn-llamar">Llamanos</button>
-        </section>
+        <!-- Body card close -->
+        <!-- Footer card -->
+        <footer
+          class="w-full bg-gray-300 hover:bg-gray-400 hover:text-white p-2 flex flex-wrap justify-center items-center rounded-b-2xl">
+          <button type="button" class="w-full font-semibold">Llamanos</button>
+        </footer>
       </article>
+      <!-- Footer card close -->
     </section>
   </main>
-  <footer class="nav-bar">
-    <nav class="footer">
-      <span> &copy; Derechos Reservados</span>
-      <h6 class="smaller">Avicenna 1, Illes Balears. Eivissa</h6>
-      <ul class="footer-list">
+  <!-- Inicia el footer -->
+  <footer class="static lg:fixed w-full bottom-0 bg-cyan-950 shadow-sm py-4 px-2">
+    <nav
+      class="flex flex-wrap md:justify-around flex-col justify-center gap-4 items-center font-semibold text-white text-xs">
+      <span> &copy; Derechos Reservados. 2023</span>
+      <h6>Illes Balears. Eivissa</h6>
+      <ul class="flex gap-2 ">
+        <!-- Logo de FACEBOOK -->
         <li>
-          <a class="logo-svg" target="_blank" href="https://www.facebook.com/">
+          <a class="fill-white hover:fill-violet-500" target="_blank" href="https://www.facebook.com/">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 d="M22.5 0c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5h-6v-9h3l.75-3.75H16.5v-1.5c0-1.5.75-2.25 2.25-2.25h1.5V3.75h-3c-2.76 0-4.5 2.16-4.5 5.25v2.25h-3V15h3v9H1.5A1.5 1.5 0 0 1 0 22.5v-21C0 .67.67 0 1.5 0h21z" />
             </svg>
           </a>
         </li>
+        <!-- Logo de INSTAGRAM -->
         <li>
-          <a class="logo-svg" target="_blank" href="https://www.instagram.com/">
+          <a class="fill-white hover:fill-violet-500" target="_blank" href="https://www.instagram.com/">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zm.05 2.23H7.06c-1.45 0-2.7.43-3.53 1.25a4.82 4.82 0 0 0-1.3 3.54v9.92c0 1.5.43 2.7 1.3 3.58a5 5 0 0 0 3.53 1.25h9.88a5 5 0 0 0 3.53-1.25 4.73 4.73 0 0 0 1.4-3.54V7.02a5 5 0 0 0-1.3-3.49 4.82 4.82 0 0 0-3.54-1.3zM12 5.76c3.39 0 6.2 2.8 6.2 6.2a6.2 6.2 0 0 1-12.4 0 6.2 6.2 0 0 1 6.2-6.2zm0 2.22a3.99 3.99 0 0 0-3.97 3.97A3.99 3.99 0 0 0 12 15.92a3.99 3.99 0 0 0 3.97-3.97A3.99 3.99 0 0 0 12 7.98zm6.44-3.77a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8z" />
             </svg>
           </a>
         </li>
+        <!-- Logo de TIKTOK -->
         <li>
-          <a class="logo-svg" target="_blank" href="https://www.tiktok.com/">
+          <a class="fill-white hover:fill-violet-500" target="_blank" href="https://www.tiktok.com/">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 d="M22.5 9.84202C20.4357 9.84696 18.4221 9.20321 16.7435 8.00171V16.3813C16.7429 17.9333 16.2685 19.4482 15.3838 20.7233C14.499 21.9984 13.246 22.973 11.7923 23.5168C10.3387 24.0606 8.75362 24.1477 7.24914 23.7664C5.74466 23.3851 4.39245 22.5536 3.37333 21.383C2.3542 20.2125 1.71674 18.7587 1.54617 17.2161C1.3756 15.6735 1.68007 14.1156 2.41884 12.7507C3.15762 11.3858 4.2955 10.279 5.68034 9.57823C7.06517 8.87746 8.63095 8.61616 10.1683 8.82927V13.0439C9.4648 12.8227 8.70938 12.8293 8.0099 13.063C7.31041 13.2966 6.70265 13.7453 6.2734 14.345C5.84415 14.9446 5.61536 15.6646 5.6197 16.402C5.62404 17.1395 5.8613 17.8567 6.29759 18.4512C6.73387 19.0458 7.34688 19.4873 8.04906 19.7127C8.75125 19.9381 9.5067 19.9359 10.2075 19.7063C10.9084 19.4768 11.5188 19.0316 11.9515 18.4345C12.3843 17.8374 12.6173 17.1188 12.6173 16.3813V0H16.7435C16.7406 0.348435 16.7698 0.696395 16.8307 1.03948V1.03948C16.9741 1.80537 17.2722 2.53396 17.7068 3.18068C18.1415 3.8274 18.7035 4.37867 19.3585 4.80075C20.2903 5.41688 21.3829 5.74528 22.5 5.74505V9.84202Z" />
             </svg>
           </a>
         </li>
+        <!-- Logo de WHATSAPP -->
         <li>
-          <a href="#" class="logo-svg">
+          <a class="fill-white hover:fill-violet-500" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 d="M24 11.7c0 6.45-5.27 11.68-11.78 11.68-2.07 0-4-.53-5.7-1.45L0 24l2.13-6.27a11.57 11.57 0 0 1-1.7-6.04C.44 5.23 5.72 0 12.23 0 18.72 0 24 5.23 24 11.7M12.22 1.85c-5.46 0-9.9 4.41-9.9 9.83 0 2.15.7 4.14 1.88 5.76L2.96 21.1l3.8-1.2a9.9 9.9 0 0 0 5.46 1.62c5.46 0 9.9-4.4 9.9-9.83a9.88 9.88 0 0 0-9.9-9.83m5.95 12.52c-.08-.12-.27-.19-.56-.33-.28-.14-1.7-.84-1.97-.93-.26-.1-.46-.15-.65.14-.2.29-.75.93-.91 1.12-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43a8.64 8.64 0 0 1-1.6-1.98c-.18-.29-.03-.44.12-.58.13-.13.29-.34.43-.5.15-.17.2-.3.29-.48.1-.2.05-.36-.02-.5-.08-.15-.65-1.56-.9-2.13-.24-.58-.48-.48-.64-.48-.17 0-.37-.03-.56-.03-.2 0-.5.08-.77.36-.26.29-1 .98-1 2.4 0 1.4 1.03 2.76 1.17 2.96.14.19 2 3.17 4.93 4.32 2.94 1.15 2.94.77 3.47.72.53-.05 1.7-.7 1.95-1.36.24-.67.24-1.25.17-1.37" />

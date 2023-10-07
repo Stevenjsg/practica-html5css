@@ -36,7 +36,10 @@ yarn dev
 # or
 pnpm dev
 ```
+Para construir el css y minificarlo usa el siguiente script:
 
+```bash
+npx tailwindcss -o ./dist/build.css --minify
 ### Recurso que pueden ser de ayuda
 
 - Iconos .svg ➡️ [Icons](https://tabler-icons.io/)

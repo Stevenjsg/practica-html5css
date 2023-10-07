@@ -11,7 +11,7 @@
 
 Una ves tenga intalado lo que se pide en los pre-requisitos. Procedmos a instalar los modulos que se usaran y para eso se necesita abrir la consola en la raiz del proyecto. Escribir en la consola/terminal:
 
-- `npm install`
+- `pnpm install`
 
 Se creara una nueva carpeta que se llama node_modules, si se creo los modulos se instalaron bien.
 
